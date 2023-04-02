@@ -13,6 +13,9 @@
 		6214823B29CF0C8900B17982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6214823929CF0C8900B17982 /* Main.storyboard */; };
 		6214823D29CF0C8A00B17982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6214823C29CF0C8A00B17982 /* Assets.xcassets */; };
 		6214824029CF0C8A00B17982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6214823E29CF0C8A00B17982 /* LaunchScreen.storyboard */; };
+		6214824A29CF87FF00B17982 /* AppBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6214824929CF87FF00B17982 /* AppBrain.swift */; };
+		6234FB8D29D9E4C4008A23F8 /* X-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6234FB8B29D9E4C4008A23F8 /* X-sound.wav */; };
+		6234FB8E29D9E4C4008A23F8 /* O-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6234FB8C29D9E4C4008A23F8 /* O-sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		6214823C29CF0C8A00B17982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6214823F29CF0C8A00B17982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6214824129CF0C8A00B17982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6214824929CF87FF00B17982 /* AppBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBrain.swift; sourceTree = "<group>"; };
+		6234FB8B29D9E4C4008A23F8 /* X-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "X-sound.wav"; path = "../../../../../../X-sound.wav"; sourceTree = "<group>"; };
+		6234FB8C29D9E4C4008A23F8 /* O-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "O-sound.wav"; path = "../../../../../../O-sound.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,48 @@
 			children = (
 				6214823329CF0C8900B17982 /* AppDelegate.swift */,
 				6214823529CF0C8900B17982 /* SceneDelegate.swift */,
-				6214823729CF0C8900B17982 /* ViewController.swift */,
-				6214823929CF0C8900B17982 /* Main.storyboard */,
+				6214824B29CF880900B17982 /* Model */,
+				6214824829CF87E400B17982 /* View */,
+				6214824729CF87D200B17982 /* Controller */,
 				6214823C29CF0C8A00B17982 /* Assets.xcassets */,
 				6214823E29CF0C8A00B17982 /* LaunchScreen.storyboard */,
 				6214824129CF0C8A00B17982 /* Info.plist */,
+				6234FB8829D9E087008A23F8 /* Sounds */,
 			);
 			path = "Tic-Tac-Toe";
+			sourceTree = "<group>";
+		};
+		6214824729CF87D200B17982 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6214823729CF0C8900B17982 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6214824829CF87E400B17982 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6214823929CF0C8900B17982 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6214824B29CF880900B17982 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6214824929CF87FF00B17982 /* AppBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6234FB8829D9E087008A23F8 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6234FB8C29D9E4C4008A23F8 /* O-sound.wav */,
+				6234FB8B29D9E4C4008A23F8 /* X-sound.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6234FB8E29D9E4C4008A23F8 /* O-sound.wav in Resources */,
 				6214824029CF0C8A00B17982 /* LaunchScreen.storyboard in Resources */,
+				6234FB8D29D9E4C4008A23F8 /* X-sound.wav in Resources */,
 				6214823D29CF0C8A00B17982 /* Assets.xcassets in Resources */,
 				6214823B29CF0C8900B17982 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +183,7 @@
 			files = (
 				6214823829CF0C8900B17982 /* ViewController.swift in Sources */,
 				6214823429CF0C8900B17982 /* AppDelegate.swift in Sources */,
+				6214824A29CF87FF00B17982 /* AppBrain.swift in Sources */,
 				6214823629CF0C8900B17982 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,8 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
