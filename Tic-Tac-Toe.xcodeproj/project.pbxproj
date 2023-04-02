@@ -14,8 +14,8 @@
 		6214823D29CF0C8A00B17982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6214823C29CF0C8A00B17982 /* Assets.xcassets */; };
 		6214824029CF0C8A00B17982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6214823E29CF0C8A00B17982 /* LaunchScreen.storyboard */; };
 		6214824A29CF87FF00B17982 /* AppBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6214824929CF87FF00B17982 /* AppBrain.swift */; };
-		6234FB8D29D9E4C4008A23F8 /* X-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6234FB8B29D9E4C4008A23F8 /* X-sound.wav */; };
-		6234FB8E29D9E4C4008A23F8 /* O-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6234FB8C29D9E4C4008A23F8 /* O-sound.wav */; };
+		62443FD129D9FAA600EB9B01 /* O-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 62443FD029D9FAA600EB9B01 /* O-sound.wav */; };
+		62443FD329D9FAAF00EB9B01 /* X-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 62443FD229D9FAAF00EB9B01 /* X-sound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		6214823F29CF0C8A00B17982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6214824129CF0C8A00B17982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6214824929CF87FF00B17982 /* AppBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBrain.swift; sourceTree = "<group>"; };
-		6234FB8B29D9E4C4008A23F8 /* X-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "X-sound.wav"; path = "../../../../../../X-sound.wav"; sourceTree = "<group>"; };
-		6234FB8C29D9E4C4008A23F8 /* O-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "O-sound.wav"; path = "../../../../../../O-sound.wav"; sourceTree = "<group>"; };
+		62443FD029D9FAA600EB9B01 /* O-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "O-sound.wav"; sourceTree = "<group>"; };
+		62443FD229D9FAAF00EB9B01 /* X-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "X-sound.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,8 @@
 				6214823C29CF0C8A00B17982 /* Assets.xcassets */,
 				6214823E29CF0C8A00B17982 /* LaunchScreen.storyboard */,
 				6214824129CF0C8A00B17982 /* Info.plist */,
-				6234FB8829D9E087008A23F8 /* Sounds */,
+				62443FD029D9FAA600EB9B01 /* O-sound.wav */,
+				62443FD229D9FAAF00EB9B01 /* X-sound.wav */,
 			);
 			path = "Tic-Tac-Toe";
 			sourceTree = "<group>";
@@ -97,15 +98,6 @@
 				6214824929CF87FF00B17982 /* AppBrain.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		6234FB8829D9E087008A23F8 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				6234FB8C29D9E4C4008A23F8 /* O-sound.wav */,
-				6234FB8B29D9E4C4008A23F8 /* X-sound.wav */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6234FB8E29D9E4C4008A23F8 /* O-sound.wav in Resources */,
+				62443FD129D9FAA600EB9B01 /* O-sound.wav in Resources */,
 				6214824029CF0C8A00B17982 /* LaunchScreen.storyboard in Resources */,
-				6234FB8D29D9E4C4008A23F8 /* X-sound.wav in Resources */,
+				62443FD329D9FAAF00EB9B01 /* X-sound.wav in Resources */,
 				6214823D29CF0C8A00B17982 /* Assets.xcassets in Resources */,
 				6214823B29CF0C8900B17982 /* Main.storyboard in Resources */,
 			);
