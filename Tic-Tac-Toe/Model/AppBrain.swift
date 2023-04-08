@@ -11,9 +11,7 @@ import UIKit
 struct Brain {
     
     func setButton (_ selectButton: UIButton) {
-        selectButton.layer.borderWidth = 4
-        selectButton.layer.borderColor = CGColor(gray: 0, alpha: 1)
-        selectButton.layer.cornerRadius = 25
+        selectButton.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
     
     }
     func disableButton (_ selectButton: UIButton) {
@@ -26,11 +24,11 @@ struct Brain {
         selectButton.alpha = 1
     }
     
-    func checkCond (_ b1: UIButton,_ b2: UIButton,_ b3: UIButton, _ image: UIImage) -> Bool {
+    func checkCond (_ b1: UIButton,_ b2: UIButton,_ b3: UIButton, _ image: UIImage, _ color: UIColor) -> Bool {
         if b1.currentImage == image && (b1.currentImage == b2.currentImage && b1.currentImage == b3.currentImage) {
-            b1.backgroundColor = UIColor(red: 0.3, green: 0.8, blue: 1, alpha: 0.8)
-            b2.backgroundColor = UIColor(red: 0.3, green: 0.8, blue: 1, alpha: 0.8)
-            b3.backgroundColor = UIColor(red: 0.3, green: 0.8, blue: 1, alpha: 0.8)
+            b1.backgroundColor = color
+            b2.backgroundColor = color
+            b3.backgroundColor = color
             return true
         } else {
             return false
