@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var xButton: UIButton!
     @IBOutlet weak var oButton: UIButton!
     
+    @IBOutlet weak var xImage: UIImageView!
+    @IBOutlet weak var oImage: UIImageView!
+    
+    
     @IBOutlet weak var colorWellX: UIColorWell!
     @IBOutlet weak var colorWellO: UIColorWell!
  
@@ -24,10 +28,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        xButton.tintColor = .black
-        oButton.tintColor = .black
-        
+
         startButton.layer.borderWidth = 3
         startButton.layer.cornerRadius = 50
         home.disableButton(startButton)
@@ -42,7 +43,7 @@ class HomeViewController: UIViewController {
     @objc private func colorChangedX() -> UIColor {
 
         let xColor = colorWellX.selectedColor
-        xButton.tintColor = xColor
+        xImage.tintColor = xColor
         xTap = 1
         
         if xTap == 1 && oTap == 1{
@@ -54,7 +55,7 @@ class HomeViewController: UIViewController {
     @objc private func colorChangedO() -> UIColor {
 
         let oColor = colorWellO.selectedColor
-        oButton.tintColor = oColor
+        oImage.tintColor = oColor
         oTap = 1
         
         if xTap == 1 && oTap == 1{

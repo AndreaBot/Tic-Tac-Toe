@@ -29,6 +29,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         winCounts1.text = "X  \(countX) - \(countO)  O"
         winCounts2.text = winCounts1.text
         turnLabel1.text = "X Turn"
@@ -44,13 +45,16 @@ class GameViewController: UIViewController {
         game.disableButton(resetScore)
         turnLabel2.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         winCounts2.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        
+        backButton.tintColor = UIColor.init(named: "Light-Dark Color")
+        newGameButton.tintColor = UIColor.init(named: "Light-Dark Color")
+        resetScore.tintColor = UIColor.init(named: "Light-Dark Color")
+        
     }
-    
+
     var xColor: UIColor = .clear
     var oColor: UIColor = .clear
-    
-    
-    
+
     var imageX = UIImage(systemName: "xmark")
     var imageO = UIImage(systemName: "circle")
     

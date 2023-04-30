@@ -9,6 +9,7 @@ import UIKit
 
 
 struct Brain {
+
     
     func setButton (_ selectButton: UIButton) {
         selectButton.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
