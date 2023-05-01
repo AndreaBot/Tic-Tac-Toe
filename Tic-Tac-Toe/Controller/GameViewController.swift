@@ -10,10 +10,7 @@ import AVFoundation
 
 
 class GameViewController: UIViewController {
-
-    var player: AVAudioPlayer!
     
-    var game = Brain()
 
     @IBOutlet weak var winCounts1: UILabel!
     @IBOutlet weak var turnLabel1: UILabel!
@@ -26,6 +23,24 @@ class GameViewController: UIViewController {
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var resetScore: UIButton!
+    
+    var player: AVAudioPlayer!
+    
+    var game = Brain()
+    
+    var xColor: UIColor = .clear
+    var oColor: UIColor = .clear
+    let uiColor = UIColor(named: "Light-Dark Color")
+
+    var imageX = UIImage(systemName: "xmark")
+    var imageO = UIImage(systemName: "circle")
+    
+    var config = UIImage.SymbolConfiguration(pointSize: 50, weight: .semibold)
+    
+    var tapCount = 0
+    
+    var countX = 0
+    var countO = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,19 +66,6 @@ class GameViewController: UIViewController {
         resetScore.tintColor = UIColor.init(named: "Light-Dark Color")
         
     }
-
-    var xColor: UIColor = .clear
-    var oColor: UIColor = .clear
-
-    var imageX = UIImage(systemName: "xmark")
-    var imageO = UIImage(systemName: "circle")
-    
-    var config = UIImage.SymbolConfiguration(pointSize: 50, weight: .semibold)
-    
-    var tapCount = 0
-    
-    var countX = 0
-    var countO = 0
     
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
@@ -147,7 +149,9 @@ class GameViewController: UIViewController {
                 
             }
             if winX() {
-                
+
+                let lightDarkCgColor = uiColor!.cgColor
+
                 for button in allButtons {
                     button.isEnabled = false
                 }
@@ -155,19 +159,21 @@ class GameViewController: UIViewController {
                 winCounts1.text = "X  \(countX) - \(countO)  O"
                 turnLabel1.text = "X WINS!"
                 turnLabel1.layer.borderWidth = 3
-                turnLabel1.layer.borderColor = CGColor(gray: 0, alpha: 1)
+                turnLabel1.layer.borderColor = lightDarkCgColor
                 turnLabel1.textColor = xColor
                 
                 winCounts2.text = "X  \(countX) - \(countO)  O"
                 turnLabel2.text = "X WINS!"
                 turnLabel2.layer.borderWidth = 3
-                turnLabel2.layer.borderColor = CGColor(gray: 0, alpha: 1)
+                turnLabel2.layer.borderColor = lightDarkCgColor
                 turnLabel2.textColor = xColor
                 
                 game.enableButton(newGameButton)
                 game.enableButton(resetScore)
                 
             } else if winO() {
+
+                let lightDarkCgColor = uiColor!.cgColor
                 
                 for button in allButtons {
                     button.isEnabled = false
@@ -176,13 +182,13 @@ class GameViewController: UIViewController {
                 winCounts1.text = "X  \(countX) - \(countO)  O"
                 turnLabel1.text = "O WINS!"
                 turnLabel1.layer.borderWidth = 3
-                turnLabel1.layer.borderColor = CGColor(gray: 0, alpha: 1)
+                turnLabel1.layer.borderColor = lightDarkCgColor
                 turnLabel1.textColor = oColor
                 
                 winCounts2.text = "X  \(countX) - \(countO)  O"
                 turnLabel2.text = "O WINS!"
                 turnLabel2.layer.borderWidth = 3
-                turnLabel2.layer.borderColor = CGColor(gray: 0, alpha: 1)
+                turnLabel2.layer.borderColor = lightDarkCgColor
                 turnLabel2.textColor = oColor
                 
                 game.enableButton(newGameButton)
