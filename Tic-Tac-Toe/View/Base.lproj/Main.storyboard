@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5vn-h8-hTe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5vn-h8-hTe">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -71,6 +72,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-Ch-lf4">
                                 <rect key="frame" x="145" y="640" width="100" height="100"/>
+                                <accessibility key="accessibilityConfiguration" identifier="START"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6YX-k4-QlA"/>
                                     <constraint firstAttribute="height" constant="100" id="Y8M-Jw-Are"/>
@@ -140,6 +142,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8d-qU-B7e" userLabel="Button 7">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="topLeft"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="1A9-WJ-fbR"/>
                                                     <constraint firstAttribute="width" constant="95" id="abt-E1-Ul7"/>
@@ -154,6 +157,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJe-DW-L5X" userLabel="Button 8">
                                                 <rect key="frame" x="102" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="top"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="TY7-38-PCH"/>
                                                     <constraint firstAttribute="height" constant="95" id="mSo-5R-SAE"/>
@@ -168,6 +172,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uv7-Cu-Sad" userLabel="Button 9">
                                                 <rect key="frame" x="204" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="topRight"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="E0c-j4-psr"/>
                                                     <constraint firstAttribute="width" constant="95" id="Xr4-3Y-g7N"/>
@@ -187,6 +192,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh8-56-Bo2" userLabel="Button 4">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="left"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="1bv-Rp-OT9"/>
                                                     <constraint firstAttribute="width" constant="95" id="eqW-vj-cWI"/>
@@ -201,6 +207,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwm-vT-oqb" userLabel="Button 5">
                                                 <rect key="frame" x="102" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="middle"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="FV9-5L-B2G"/>
                                                     <constraint firstAttribute="height" constant="95" id="x4R-9k-oH2"/>
@@ -215,6 +222,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVv-Zj-X0E" userLabel="Button 6">
                                                 <rect key="frame" x="204" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="right"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="0KV-gn-4uB"/>
                                                     <constraint firstAttribute="height" constant="95" id="ISl-Ur-ABl"/>
@@ -234,6 +242,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnN-rM-3Ub" userLabel="Button 1">
                                                 <rect key="frame" x="0.0" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="bottomLeft"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="9Ma-os-a5W"/>
                                                     <constraint firstAttribute="height" constant="95" id="js3-yK-34p"/>
@@ -249,6 +258,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-OK-eFy" userLabel="Button 2">
                                                 <rect key="frame" x="102" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="bottom"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="BLp-lr-7Ja"/>
                                                     <constraint firstAttribute="width" constant="95" id="d6T-c5-ojb"/>
@@ -263,6 +273,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tj-F0-XO0" userLabel="Button 3">
                                                 <rect key="frame" x="204" y="0.0" width="95" height="95"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="bottomRight"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="95" id="mnv-2I-gHE"/>
                                                     <constraint firstAttribute="height" constant="95" id="wUN-zG-Z2T"/>
@@ -280,7 +291,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win Counts 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08B-gX-tTg" userLabel="Label Count 1">
-                                <rect key="frame" x="80" y="81" width="230" height="40"/>
+                                <rect key="frame" x="80" y="34" width="230" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="8Hn-TH-mxv"/>
                                     <constraint firstAttribute="height" constant="40" id="z9t-YQ-jep"/>
@@ -290,7 +301,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win Counts 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-La-6dm" userLabel="Label Count 2">
-                                <rect key="frame" x="80" y="736" width="230" height="40"/>
+                                <rect key="frame" x="80" y="770" width="230" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="eWh-bA-Leb"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="jZY-pZ-Hmi"/>
@@ -300,7 +311,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn Label 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ri-ul-0Nt">
-                                <rect key="frame" x="127.33333333333333" y="147" width="135.33333333333337" height="40"/>
+                                <rect key="frame" x="127.33333333333333" y="100" width="135.33333333333337" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="turnLabel1">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="RVa-Uj-duI"/>
                                     <constraint firstAttribute="height" constant="40" id="vUO-wV-bBk"/>
@@ -310,7 +324,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn Label 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uh-cC-wo3">
-                                <rect key="frame" x="125.66666666666667" y="670" width="138.66666666666663" height="40"/>
+                                <rect key="frame" x="125.66666666666667" y="704" width="138.66666666666663" height="40"/>
                                 <color key="tintColor" name="Light-Dark Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="NVx-WD-rhS"/>
@@ -321,7 +335,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BDs-pN-SAZ" userLabel="Buttons Stack View">
-                                <rect key="frame" x="16" y="81" width="40" height="130"/>
+                                <rect key="frame" x="16" y="34" width="40" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-Rk-Syr">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -377,6 +391,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="04o-na-re0">
                                 <rect key="frame" x="9.3333333333333428" y="248.33333333333331" width="371.66666666666663" height="347.33333333333331"/>
                                 <color key="tintColor" name="Light-Dark Color"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="320" weight="ultraLight"/>
                             </imageView>
                         </subviews>
@@ -438,7 +455,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
